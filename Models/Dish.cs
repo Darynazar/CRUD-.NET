@@ -10,6 +10,6 @@
 
         public double Price { get; set; }
 
-        public List<DishIngredient> DishIngredients { get; set; }
+        public List<DishIngredient>? DishIngredients { get; set; }
     }
 }
