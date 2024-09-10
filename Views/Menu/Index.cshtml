@@ -1,6 +1,6 @@
 ﻿@model List<Hospital_Web.Models.Dish>
 @{
-    ViewData["Title"] = "MenuIndex  ";
+    ViewData["Title"] = "MenuIndex";
 }
 
 <div class="container">
@@ -18,6 +18,10 @@
 
                 <div class="d-flex justify-content-center">
                     <h4>@item.Price.ToString("N2") Dollars</h4>
+                </div
+
+                 <div class="d-flex justify-content-center">
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.id">View</a>
                 </div>
             </div> 
         }
